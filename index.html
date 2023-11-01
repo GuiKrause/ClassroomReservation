@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classroom Reservation</title>
+  </head>
+  <body>
+    <header>
+      <h1>Classroom Reservation</h1>
+    </header>
+    <div class="main-container">
+      <div class="form-container">
+        <h2>
+          Reserve Classroom
+        </h2>
+        <form action="post">
+          <div class="form-field">
+            <label for="text-area">Description</label>
+            <textarea name="" id="text-area" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form-field">
+            <label for="requester">Requester</label>
+            <input type="text" name="" id="requester">
+          </div>
+          <div class="form-field">
+            <label for="classroom">Classroom</label>
+            <select name="" id="classroom"></select>
+          </div>
+          <div class="form-field">
+            <label for="start-time">Starting Time</label>
+            <input type="datetime-local" name="" id="start-time">
+          </div>
+          <div class="form-field">
+            <label for="ending-time">Ending Time</label>
+            <input type="datetime-local" name="" id="ending-time">
+          </div>
+          <div class="">
+            <input type="checkbox" name="" id="checkbox">
+            <label id="conditions" for="checkbox">Agree terms and conditions</label>
+            <input id="reservation-button" type="button" value="Reservation">
+          </div>
+        </form>
+      </div>
+      <div class="dashboard-container">
+        <div class="table-container">
+          <ul>
+            <li>
+              Reservas realizadas:
+            </li>
+          </ul>
+          <div>Description</div>
+          <div>Requester</div>
+          <div>Classroom</div>
+          <div>Start Time</div>
+          <div>End Time</div>
+        </div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

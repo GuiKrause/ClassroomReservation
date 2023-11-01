@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --bacground-table-color: #4648B5;
+  --background-color: #e6e6e6;
+  --table-color: #e6e6e6;
+  --form-color: #222;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header{
+  background-color: var(--bacground-table-color);
+  width: 100%;
+}
+header > h1{
+  margin-left: 15px;
+  padding: 7.5px 0;
+  color: #e6e6e6;
+}
+div.main-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+div.form-container{
+  background-color: var(--background-color);
+  color: var(--form-color);
+  height: 100%;
+  width: 900px;
+  padding: 0 15px;
+}
+div.form-container > h2{
+  margin: 20px 0 40px 0;
+}
+div.form-field > input,textarea,select{
+  height: 3rem;
+  border: 1px solid #cdcdcd;
+}
+textarea{
+  height: 6rem;
+}
+div.form-field > label{
+  line-height: 1;
+}
+div.dashboard-container{
+  background-color: var(--background-color);
+
+  width: 100%;
+}
+div.table-container{
+  background-color: #ebebaa;
+}
+div.form-field{
+  display: flex;
+  flex-direction: column;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#reservation-button{
+  display: block;
+  margin-left: auto;
+  border: none;
+  padding: 15px;
+  background-color: #4648B5;
+  color: var(--table-color);
+}
