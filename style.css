@@ -52,7 +52,7 @@ textarea{
   height: 6rem;
 }
 div.form-field > label{
-  line-height: 1;
+  line-height: 1.3;
 }
 div.dashboard-container{
   background-color: var(--background-color);
@@ -61,6 +61,9 @@ div.dashboard-container{
 }
 div.table-container{
   background-color: #ebebaa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 div.form-field{
   display: flex;
@@ -78,4 +81,11 @@ form{
   padding: 15px;
   background-color: #4648B5;
   color: var(--table-color);
+}
+div.table-title{
+  background-color: var(--bacground-table-color);
+  color: var(--table-color);
+  width: fit-content;
+  padding: 5px;
+  border: 1px solid var(--form-color);
 }
