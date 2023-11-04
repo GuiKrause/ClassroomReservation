@@ -10,6 +10,7 @@
   --background-color: #e6e6e6;
   --table-color: #e6e6e6;
   --form-color: #222;
+  --border-color: #888888;
 }
 body{
   height: 100vh;
@@ -40,6 +41,7 @@ div.form-container{
   height: 100%;
   width: 900px;
   padding: 0 15px;
+  border-right: 1px solid var(--border-color);
 }
 div.form-container > h2{
   margin: 20px 0 40px 0;
@@ -56,14 +58,17 @@ div.form-field > label{
 }
 div.dashboard-container{
   background-color: var(--background-color);
-
+  height: 100%;
   width: 100%;
+  padding: 0 15px;
+  border-left: 1px solid var(--border-color);
 }
 div.table-container{
   background-color: #ebebaa;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  margin: 0px auto;
+  width: 100%;
 }
 div.form-field{
   display: flex;
@@ -81,11 +86,19 @@ form{
   padding: 15px;
   background-color: #4648B5;
   color: var(--table-color);
+  cursor: pointer;
 }
 div.table-title{
   background-color: var(--bacground-table-color);
   color: var(--table-color);
-  width: fit-content;
+  width: 100%;
   padding: 5px;
   border: 1px solid var(--form-color);
+  text-align: center;
+}
+div.dashboard-container h2{
+  margin: 20px 0 40px 0;
+}
+textarea{
+  resize: none;
 }
